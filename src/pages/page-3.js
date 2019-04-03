@@ -1,6 +1,6 @@
-import React from 'react';
-import Layout from '../../components/layout';
-import { graphql, StaticQuery, Link } from 'gatsby';
+import React from "react";
+import Layout from "../components/layout";
+import { graphql, StaticQuery, Link } from "gatsby";
 const getImageData = graphql`
   {
     allFile {
@@ -26,7 +26,7 @@ export default () => (
           <thead>
             <tr>
               <th>RelativePath</th>
-              <th>Suze of Image</th>
+              <th>Size of Image</th>
               <th>Extension</th>
               <th>Birthtime</th>
             </tr>
