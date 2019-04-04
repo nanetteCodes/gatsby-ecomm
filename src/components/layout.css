@@ -637,3 +637,17 @@ pre tt:after {
   color: white;
   text-decoration: none;
 }
+
+/* netlify Identity */
+
+.netlify-identity-menu {
+  list-style: none;
+  margin: 0;
+}
+
+.netlify-identity-signup,
+.netlify-identity-login,
+.netlify-identity-logout,
+.netlify-identity-menu {
+  color: white;
+}
