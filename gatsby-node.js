@@ -8,6 +8,7 @@ const path = require("path");
 const { createFilePath } = require("gatsby-source-filesystem");
 const PostTemplate = path.resolve("./src/templates/post-template.js");
 const BlogTemplate = path.resolve("./src/templates/blog-template.js");
+const ProductTemplate = path.resolve("./src/templates/product-template.js");
 
 //whenever a new node is created, or updated
 exports.onCreateNode = ({ node, getNode, actions }) => {
@@ -32,6 +33,13 @@ exports.createPages = async ({ graphql, actions }) => {
             fields {
               slug
             }
+          }
+        }
+      }
+      allContentfulProduct {
+        edges {
+          node {
+            slug
           }
         }
       }
@@ -76,6 +84,16 @@ exports.createPages = async ({ graphql, actions }) => {
         isLastPage,
         currentPage,
         totalPages
+      }
+    });
+  });
+  const products = result.data.allContentfulProduct.edges;
+  products.forEach(({ node: product }) => {
+    createPage({
+      path: `/products/${product.slug}`,
+      component: ProductTemplate,
+      context: {
+        slug: product.slug
       }
     });
   });
