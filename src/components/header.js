@@ -51,6 +51,8 @@ class Header extends React.Component {
           </span>
           <NavLink to="/about">About</NavLink>
           <NavLink to="/blog">Blog</NavLink>
+          <NavLink to="/portfolio">Portfolio</NavLink>
+          <NavLink to="/cv">CV</NavLink>
           {/* <NavLink to="/products">Store</NavLink> */}
 
           <div data-netlify-identity-menu />
