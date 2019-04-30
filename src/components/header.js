@@ -49,6 +49,7 @@ class Header extends React.Component {
               <NavLink to="/">{siteTitle}</NavLink>
             </h1>
           </span>
+          <NavLink to="/about">About</NavLink>
           <NavLink to="/blog">Blog</NavLink>
           {/* <NavLink to="/products">Store</NavLink> */}
 
