@@ -1,4 +1,5 @@
 import { Link } from "gatsby";
+import PropTypes from "prop-types";
 import React from "react";
 import netlifyIdentity from "netlify-identity-widget";
 
@@ -10,7 +11,7 @@ const isActive = ({ isCurrent }) => {
 const NavLink = props => <Link getProps={isActive} {...props} />;
 
 class Header extends React.Component {
-  compoenentDidMount() {
+  componentDidMount() {
     netlifyIdentity.init();
   }
   render() {
@@ -52,26 +53,16 @@ class Header extends React.Component {
           <NavLink to="/products">Store</NavLink>
 
           <div data-netlify-identity-menu />
-
-          {/* Shopping Cart Summary */}
-          <div
-            style={{ color: "white", cursor: "pointer" }}
-            className="snipcart-summary snipcart-checkout"
-          >
-            <div>
-              <strong>My Cart</strong>
-            </div>
-            <div>
-              <span className="snipcart-total-items" /> Items in Cart
-            </div>
-            <div>
-              Total price <span className="snipcart-total-price" />
-            </div>
-          </div>
         </div>
       </header>
     );
   }
 }
+Header.propTypes = {
+  siteTitle: PropTypes.string
+};
 
+Header.defaultProps = {
+  siteTitle: ``
+};
 export default Header;
