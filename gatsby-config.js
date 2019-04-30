@@ -5,7 +5,7 @@ if (process.env.NODE_ENV !== "production") {
 
 module.exports = {
   siteMetadata: {
-    title: `<Nanette.Codes/>`,
+    title: `Nanette.Codes`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `Nanette Julius`
   },
@@ -55,14 +55,14 @@ module.exports = {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
       }
-    },
-    {
-      resolve: "gatsby-plugin-snipcart",
-      options: {
-        apiKey: process.env.SNIPCART_API_KEY,
-        autopop: true
-      }
     }
+    // {
+    //   resolve: "gatsby-plugin-snipcart",
+    //   options: {
+    //     apiKey: process.env.SNIPCART_API_KEY,
+    //     autopop: true
+    //   }
+    // }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
