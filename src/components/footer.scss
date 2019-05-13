@@ -1,7 +1,33 @@
+@import "../css/boxStyled.scss";
+
 footer {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  text-align: center;
+  padding-bottom: 10px;
+
+  .footer-copywrite {
+    float: left;
+    padding-left: 10px;
+    padding-top: 6px;
+  }
+  .social-links {
+    display: inline-flex;
+    float: right;
+    text-align: center;
+    #logo {
+      margin-right: 10px;
+      margin-bottom: 6px;
+    }
+    .fab {
+      line-height: 2;
+    }
+  }
+
+  /* logo style */
+  .logo-box {
+    height: 2.3rem;
+    width: 2.3rem;
+  }
 }

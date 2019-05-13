@@ -1,3 +1,8 @@
+@import "../css/boxStyled.scss";
+
+$main-red: #ee4545;
+$light-black: #212b36;
+
 header {
   opacity: 1;
   margin-bottom: 1.45rem;
@@ -9,137 +14,45 @@ header {
     max-width: 960px;
     padding: 1.45rem 1.0875rem;
     opacity: 1;
-    img {
-      border-radius: 50%;
-      border: 3px solid orange;
-      margin: 0 5px;
-      width: 50px;
-    }
     h1 {
       margin: 0;
     }
 
     /* logo style */
-
-    #header-logo {
-      -webkit-align-items: center;
-      align-items: center;
-      display: -webkit-flex;
-      display: flex;
-      pointer-events: all;
-      position: relative;
-      z-index: 10;
-      color: inherit;
-      border-radius: 0.125rem;
-      text-decoration: none;
-      transition: box-shadow 0.3s cubic-bezier(0.5, 0.61, 0.355, 1);
-    }
-
-    .header-logo-box {
+    .logo-box {
       height: 2.5rem;
       width: 2.5rem;
-      opacity: 1;
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-      background-color: transparent;
-      border: 0.0625rem solid #212b36;
-      border-radius: 0.125rem;
-      color: #212b36;
-      display: inline-block;
-      font-weight: 800;
-      padding: 0;
-      position: relative;
-      transition: box-shadow 0.3s cubic-bezier(0.5, 0.61, 0.355, 1),
-        -webkit-transform 0.3s cubic-bezier(0.5, 0.61, 0.355, 1);
-      transition: box-shadow 0.3s cubic-bezier(0.5, 0.61, 0.355, 1),
-        transform 0.3s cubic-bezier(0.5, 0.61, 0.355, 1);
-      transition: box-shadow 0.3s cubic-bezier(0.5, 0.61, 0.355, 1),
-        transform 0.3s cubic-bezier(0.5, 0.61, 0.355, 1),
-        -webkit-transform 0.3s cubic-bezier(0.5, 0.61, 0.355, 1);
-
-      &::after {
-        background-color: #ee4545;
-        opacity: 0.5;
-        border-radius: 0.125rem;
-        bottom: -0.0625rem;
-        content: "";
-        height: auto;
-        left: 0;
-        position: absolute;
-        right: -0.0625rem;
-        top: 0;
-        -webkit-transform: translate(0.1875rem, 0.1875rem);
-        transform: translate(0.1875rem, 0.1875rem);
-        transition: background-color 0.3s cubic-bezier(0.5, 0.61, 0.355, 1),
-          -webkit-transform 0.3s cubic-bezier(0.5, 0.61, 0.355, 1);
-        transition: background-color 0.3s cubic-bezier(0.5, 0.61, 0.355, 1),
-          transform 0.3s cubic-bezier(0.5, 0.61, 0.355, 1);
-        transition: background-color 0.3s cubic-bezier(0.5, 0.61, 0.355, 1),
-          transform 0.3s cubic-bezier(0.5, 0.61, 0.355, 1),
-          -webkit-transform 0.3s cubic-bezier(0.5, 0.61, 0.355, 1);
-        width: auto;
-        z-index: -1;
-      }
-
-      &:hover::after {
-        -webkit-transform: translate(0, 0);
-        transform: translate(0, 0);
-      }
     }
-
-    .o-header__logo:hover .header-logo-box::after {
-      -webkit-transform: translate(0, 0);
-      transform: translate(0, 0);
-    }
-
-    .header-logo-initial {
-      left: 50%;
-      position: absolute;
-      top: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-    }
-
-    .header-logo-text {
-      color: inherit;
-      font-weight: 800;
-      margin-left: 0.9375rem;
-      display: flex;
-      align-items: center;
-    }
-
-    @media only screen and (min-width: 48em) {
-      .header-logo-box {
-        height: 3.125rem;
-        width: 3.125rem;
-      }
-      .header-logo-box::after {
-        -webkit-transform: translate(0.25rem, 0.25rem);
-        transform: translate(0.25rem, 0.25rem);
-      }
-      .header-logo-text {
-        margin-left: 1.25rem;
-      }
-      .header-logo-box::after {
-        -webkit-transform: translate(0.25rem, 0.25rem);
-        transform: translate(0.25rem, 0.25rem);
-      }
-    }
-
     /* Navlink styles */
 
     [data-links] {
       opacity: 0.5;
       display: flex;
+      &.active {
+        background-size: 100% 35%, 100% 35%;
+        transition: box-shadow 0.3s cubic-bezier(0.5, 0.61, 0.355, 1);
+      }
     }
 
     .navlink[data-links] {
       margin: 0px 5px;
+      background-image: linear-gradient($main-red, $main-red),
+        linear-gradient(#f89c95, #f89c95);
+      background-position: bottom left, bottom left;
+      background-repeat: no-repeat;
+      background-size: 0% 35%, 100% 35%;
+      font-weight: 100;
+      transition: background-size 0.3s cubic-bezier(0.5, 0.61, 0.355, 1),
+        box-shadow 0.3s cubic-bezier(0.5, 0.61, 0.355, 1);
+      border-radius: 0.125rem;
+      text-decoration: none;
+      &:hover {
+        background-size: 100% 35%, 100% 35%;
+      }
     }
 
     .active,
-    .active .header-logo-text {
+    .active .logo-text {
       opacity: 1;
       font-weight: 700;
     }
@@ -148,10 +61,6 @@ header {
     .active {
       text-decoration: none;
       color: rgb(238, 69, 69);
-      &:hover,
-      &:hover {
-        text-decoration: underline;
-      }
     }
 
     /* netlify Identity */

@@ -1,0 +1,106 @@
+$main-red: #ee4545;
+$light-black: #212b36;
+#logo {
+  -webkit-align-items: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: flex;
+  pointer-events: all;
+  position: relative;
+  z-index: 10;
+  color: inherit;
+  border-radius: 0.125rem;
+  text-decoration: none;
+  transition: box-shadow 0.3s cubic-bezier(0.5, 0.61, 0.355, 1);
+}
+
+.logo-box {
+  // height: 2.5rem;
+  // width: 2.5rem;
+  opacity: 1;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  border: 0.0625rem solid $light-black;
+  border-radius: 0.125rem;
+  color: $light-black;
+  display: inline-block;
+  font-weight: 800;
+  padding: 0;
+  position: relative;
+  transition: box-shadow 0.3s cubic-bezier(0.5, 0.61, 0.355, 1),
+    -webkit-transform 0.3s cubic-bezier(0.5, 0.61, 0.355, 1);
+  transition: box-shadow 0.3s cubic-bezier(0.5, 0.61, 0.355, 1),
+    transform 0.3s cubic-bezier(0.5, 0.61, 0.355, 1);
+  transition: box-shadow 0.3s cubic-bezier(0.5, 0.61, 0.355, 1),
+    transform 0.3s cubic-bezier(0.5, 0.61, 0.355, 1),
+    -webkit-transform 0.3s cubic-bezier(0.5, 0.61, 0.355, 1);
+
+  &::after {
+    background-color: $main-red;
+    opacity: 0.5;
+    border-radius: 0.125rem;
+    bottom: -0.0625rem;
+    content: "";
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: -0.0625rem;
+    top: 0;
+    -webkit-transform: translate(0.1875rem, 0.1875rem);
+    transform: translate(0.1875rem, 0.1875rem);
+    transition: background-color 0.3s cubic-bezier(0.5, 0.61, 0.355, 1),
+      -webkit-transform 0.3s cubic-bezier(0.5, 0.61, 0.355, 1);
+    transition: background-color 0.3s cubic-bezier(0.5, 0.61, 0.355, 1),
+      transform 0.3s cubic-bezier(0.5, 0.61, 0.355, 1);
+    transition: background-color 0.3s cubic-bezier(0.5, 0.61, 0.355, 1),
+      transform 0.3s cubic-bezier(0.5, 0.61, 0.355, 1),
+      -webkit-transform 0.3s cubic-bezier(0.5, 0.61, 0.355, 1);
+    width: auto;
+    z-index: -1;
+  }
+
+  &:hover::after {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+
+.logo-box::after {
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+.logo-initial {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.logo-text {
+  color: inherit;
+  margin-left: 0.9375rem;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (min-width: 48em) {
+  .logo-box {
+    height: 3.125rem;
+    width: 3.125rem;
+  }
+  .logo-box::after {
+    -webkit-transform: translate(0.25rem, 0.25rem);
+    transform: translate(0.25rem, 0.25rem);
+  }
+  .logo-text {
+    margin-left: 1.25rem;
+  }
+  .logo-box::after {
+    -webkit-transform: translate(0.25rem, 0.25rem);
+    transform: translate(0.25rem, 0.25rem);
+  }
+}

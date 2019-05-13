@@ -28,11 +28,11 @@ class Header extends React.Component {
               <NavLink to="/">{siteTitle}</NavLink>
             </h1>
           </span> */}
-          <NavLink to="/" id="header-logo">
-            <span className="header-logo-box">
-              <span className="header-logo-initial">N</span>
+          <NavLink to="/" id="logo">
+            <span className="logo-box">
+              <span className="logo-initial">N</span>
             </span>
-            <span className="header-logo-text" data-links>
+            <span className="logo-text" data-links>
               {siteTitle}
             </span>
           </NavLink>
