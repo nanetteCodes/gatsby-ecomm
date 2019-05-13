@@ -5,7 +5,7 @@ import SEO from "../components/seo";
 const Cv = () => (
   <Layout>
     <SEO title="resume cv work experience" />
-    <h1>My Resume</h1>
+    <h1>Resume</h1>
     <p>content coming soon!</p>
   </Layout>
 );
