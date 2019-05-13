@@ -6,7 +6,7 @@ class Footer extends React.Component {
     const { siteAuthor } = this.props;
     return (
       <footer>
-        <div class="footer-copywrite">
+        <div className="footer-copywrite">
           ♥ Built by {siteAuthor} © {new Date().getFullYear()}
         </div>
         <div className="social-links">
@@ -17,7 +17,7 @@ class Footer extends React.Component {
             id="logo"
           >
             <span className="logo-box">
-              <i class="fab fa-linkedin-in" />
+              <i className="fab fa-linkedin-in" />
             </span>
           </a>
           <a
@@ -27,12 +27,12 @@ class Footer extends React.Component {
             id="logo"
           >
             <span className="logo-box">
-              <i class="fab fa-github" />
+              <i className="fab fa-github" />
             </span>
           </a>
           <a href="mailto:nanette.codes@gmail.com" id="logo">
             <span className="logo-box">
-              <i class="fas fa-envelope-square" />
+              <i className="far fa-envelope" />
             </span>
           </a>
         </div>
