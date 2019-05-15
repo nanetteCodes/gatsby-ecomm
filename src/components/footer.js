@@ -1,6 +1,11 @@
 import React from "react";
 import "./footer.scss";
 
+//icons images
+import linkedinIcon from "../images/linkedin.svg";
+import githubIcon from "../images/github.svg";
+import emailIcon from "../images/envelope.svg";
+
 class Footer extends React.Component {
   render() {
     const { siteAuthor } = this.props;
@@ -17,7 +22,7 @@ class Footer extends React.Component {
             id="logo"
           >
             <span className="logo-box">
-              <i className="fab fa-linkedin-in" />
+              <img src={linkedinIcon} alt="linkedin link" />
             </span>
           </a>
           <a
@@ -27,12 +32,12 @@ class Footer extends React.Component {
             id="logo"
           >
             <span className="logo-box">
-              <i className="fab fa-github" />
+              <img src={githubIcon} alt="github link" />
             </span>
           </a>
           <a href="mailto:nanette.codes@gmail.com" id="logo">
             <span className="logo-box">
-              <i className="far fa-envelope" />
+              <img src={emailIcon} alt="email link" />
             </span>
           </a>
         </div>

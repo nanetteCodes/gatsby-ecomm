@@ -22,12 +22,7 @@ class Header extends React.Component {
       <header>
         <div className="headerContent">
           {/* title/ logo */}
-          {/* <span>
-            <img src={gatsbyLogo} alt="gatsby garb logo" />
-            <h1>
-              <NavLink to="/">{siteTitle}</NavLink>
-            </h1>
-          </span> */}
+          {/* <img src={gatsbyLogo} alt="gatsby garb logo" /> */}
           <NavLink to="/" id="logo">
             <span className="logo-box">
               <span className="logo-initial">N</span>

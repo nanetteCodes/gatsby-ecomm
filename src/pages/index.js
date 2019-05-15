@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "gatsby";
 import Typed from "react-typed";
 
 import Layout from "../components/layout";
@@ -32,13 +31,13 @@ const IndexPage = () => {
           `portfolio`
         ]}
       />
-      <div>
+      <div id="home-page-container">
         <h1>Hi I'm Nanette!</h1>
         <h2> Welcome To My Site :)</h2>
         <Typed
           className="self-typed-heading"
           loop
-          typeSpeed={70}
+          typeSpeed={40}
           backSpeed={40}
           strings={roles}
           shuffle={false}
@@ -53,7 +52,7 @@ const IndexPage = () => {
       {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
         <Image />
       </div> */}
-      <Link to="/about/">Learn more about me.</Link>
+      {/* <Link to="/about/">Learn more about me.</Link> */}
     </Layout>
   );
 };
