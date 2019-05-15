@@ -1,8 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-
-//import resume from 'Nanette_Julius.pdf'
+import { withPrefix } from "gatsby";
 
 const Cv = () => (
   <Layout>
@@ -10,9 +9,10 @@ const Cv = () => (
     <h1>Resume</h1>
     <div className="cv-title">
       <a
-        download="Nanette_Julius.pdf"
+        rel="noopener noreferrer"
         className="btn-cv"
-        href="Nanette_Julius.pdf"
+        href={withPrefix("Nanette_Julius.pdf")}
+        target="_blank"
       >
         Download
       </a>
