@@ -1,11 +1,12 @@
 import React from "react";
 import Typed from "react-typed";
+import { withPrefix } from "gatsby";
 
 import Layout from "../components/layout";
 // import Image from "../components/image";
 import SEO from "../components/seo";
 
-import "../css/index.scss";
+import "../css/pages/index.scss";
 
 const IndexPage = () => {
   let roles = [
@@ -32,8 +33,9 @@ const IndexPage = () => {
         ]}
       />
       <div id="home-page-container">
-        <h1>Hi I'm Nanette!</h1>
+        <h1 className="page-heading">Hi I'm Nanette!</h1>
         <h2> Welcome To My Site :)</h2>
+
         <Typed
           className="self-typed-heading"
           loop
@@ -47,6 +49,17 @@ const IndexPage = () => {
           smartBackspace
           cursorChar="|"
         />
+
+        <div className="downloadCV">
+          <a
+            rel="noopener noreferrer"
+            className="btn-cv"
+            href={withPrefix("Nanette_Julius.pdf")}
+            target="_blank"
+          >
+            Download
+          </a>
+        </div>
       </div>
 
       {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>

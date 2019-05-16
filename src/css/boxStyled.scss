@@ -99,8 +99,4 @@ $light-black: #212b36;
   .logo-text {
     margin-left: 1.25rem;
   }
-  .logo-box::after {
-    -webkit-transform: translate(0.25rem, 0.25rem);
-    transform: translate(0.25rem, 0.25rem);
-  }
 }
