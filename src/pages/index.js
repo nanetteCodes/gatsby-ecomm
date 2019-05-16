@@ -50,16 +50,21 @@ const IndexPage = () => {
           cursorChar="|"
         />
 
-        <div className="downloadCV">
-          <a
-            rel="noopener noreferrer"
-            className="btn-cv"
-            href={withPrefix("Nanette_Julius.pdf")}
-            target="_blank"
-          >
-            Download
-          </a>
-        </div>
+        <a
+          rel="noopener noreferrer"
+          href={withPrefix("Nanette_Julius.pdf")}
+          target="_blank"
+          className="downloadCV logo-box"
+          style={{
+            display: "block",
+            width: "8.125rem",
+            lineHeight: "3",
+            textDecoration: "none",
+            margin: "22px auto"
+          }}
+        >
+          Download CV
+        </a>
       </div>
 
       {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
