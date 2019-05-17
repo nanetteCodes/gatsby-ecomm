@@ -8,7 +8,7 @@ const About = () => (
   <Layout>
     <SEO title="about me" />
     <h1 className="page-heading">About me...</h1>
-    <p>content coming soon!</p>
+    <p style={{ textAlign: "center" }}>content coming soon!</p>
     <Link to="/">Go back to the homepage</Link>
   </Layout>
 );
