@@ -11,12 +11,9 @@ export default ({ data, pageContext }) => {
   return (
     <Layout>
       <div>
-        <h1 style={{ display: "inlineBlock", borderBottom: "1px solid" }}>
-          Blog...
-        </h1>
+        <h1 className="page-heading">Blog...</h1>
         <p>content coming soon!</p>
 
-        {/* TODO: total count is showing totalCount per page not total */}
         <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
         {data.allMarkdownRemark.edges.map(({ node }) => (
           <div key={node.id}>

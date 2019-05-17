@@ -11,9 +11,6 @@ class Footer extends React.Component {
     const { siteAuthor } = this.props;
     return (
       <footer>
-        <div className="footer-copywrite">
-          ♥ Built by {siteAuthor} © {new Date().getFullYear()}
-        </div>
         <div className="social-links">
           <a
             href="https://www.linkedin.com/in/nanette-julius"
@@ -40,6 +37,9 @@ class Footer extends React.Component {
               <img src={emailIcon} alt="email link" />
             </span>
           </a>
+        </div>
+        <div className="footer-copywrite">
+          ♥ Built by {siteAuthor} © {new Date().getFullYear()}
         </div>
       </footer>
     );

@@ -10,7 +10,7 @@ import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 
 import Header from "./header";
-import Footer from "./footer";
+import LeftSection from "./leftSection";
 
 import "./layout.scss";
 
@@ -31,9 +31,9 @@ const Layout = ({ children }) => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div id="layout">
+          <LeftSection />
           <main>{children}</main>
         </div>
-        <Footer siteAuthor={data.site.siteMetadata.author} />
       </>
     )}
   />

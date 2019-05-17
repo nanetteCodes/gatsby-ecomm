@@ -1,10 +1,8 @@
 import React from "react";
 import Typed from "react-typed";
-import { withPrefix } from "gatsby";
-
-import Layout from "../components/layout";
 // import Image from "../components/image";
 import SEO from "../components/seo";
+import Layout from "../components/layout";
 
 import "../css/pages/index.scss";
 
@@ -33,7 +31,7 @@ const IndexPage = () => {
         ]}
       />
       <div id="home-page-container">
-        <h1 className="page-heading">Hi I'm Nanette!</h1>
+        <h1>Hi I'm Nanette!</h1>
         <h2> Welcome To My Site :)</h2>
 
         <Typed
@@ -49,22 +47,6 @@ const IndexPage = () => {
           smartBackspace
           cursorChar="|"
         />
-
-        <a
-          rel="noopener noreferrer"
-          href={withPrefix("Nanette_Julius.pdf")}
-          target="_blank"
-          className="downloadCV logo-box"
-          style={{
-            display: "block",
-            width: "8.125rem",
-            lineHeight: "3",
-            textDecoration: "none",
-            margin: "22px auto"
-          }}
-        >
-          Download CV
-        </a>
       </div>
 
       {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>

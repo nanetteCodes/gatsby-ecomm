@@ -1,24 +1,20 @@
-@import "../css/boxStyled.scss";
-
 footer {
-  position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  padding: 10px 0;
-  background-color: rgb(255, 233, 219);
-
+  padding: 38px 0 0;
+  text-align: center;
+  align-self: end;
   .footer-copywrite {
-    float: left;
     padding-left: 10px;
     padding-top: 6px;
+    opacity: 0.4;
   }
   .social-links {
     display: inline-flex;
-    float: right;
     text-align: center;
     #logo {
-      margin-right: 10px;
+      margin-right: 16px;
       margin-bottom: 6px;
     }
     img {

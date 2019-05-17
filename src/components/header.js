@@ -35,9 +35,9 @@ class Header extends React.Component {
           <NavLink to="/about" data-links>
             About
           </NavLink>
-          <NavLink to="/blog" data-links>
+          {/* <NavLink to="/blog" data-links>
             Blog
-          </NavLink>
+          </NavLink> */}
           <NavLink to="/portfolio" data-links>
             Portfolio
           </NavLink>

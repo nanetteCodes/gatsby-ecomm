@@ -10,7 +10,12 @@ const Cv = () => (
     <SEO title="resume cv work experience" />
     <h1 className="page-heading">Resume</h1>
     <iframe
-      style={{ width: "100%", height: "800px" }}
+      style={{
+        width: "100%",
+        height: "800px",
+        borderWidth: "1px",
+        borderStyle: "unset"
+      }}
       src={withPrefix("Nanette_Julius.pdf")}
       title="NanetteJuliusCV"
     />
