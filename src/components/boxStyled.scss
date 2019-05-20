@@ -1,18 +1,5 @@
 $main-red: #ee4545;
 $light-black: #212b36;
-#logo {
-  -webkit-align-items: center;
-  align-items: center;
-  display: -webkit-flex;
-  display: flex;
-  pointer-events: all;
-  position: relative;
-  z-index: 10;
-  color: inherit;
-  border-radius: 0.125rem;
-  text-decoration: none;
-  transition: box-shadow 0.3s cubic-bezier(0.5, 0.61, 0.355, 1);
-}
 
 .logo-box {
   // height: 2.5rem;

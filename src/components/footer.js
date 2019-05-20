@@ -1,6 +1,6 @@
 import React from "react";
 import "./footer.scss";
-
+import BoxStyled from "./boxStyled";
 //icons images
 import linkedinIcon from "../images/linkedin.svg";
 import githubIcon from "../images/github.svg";
@@ -16,11 +16,10 @@ class Footer extends React.Component {
             href="https://www.linkedin.com/in/nanette-julius"
             target="_blank"
             rel="noopener noreferrer"
-            id="logo"
           >
-            <span className="logo-box">
+            <BoxStyled id="logo">
               <img src={linkedinIcon} alt="linkedin link" />
-            </span>
+            </BoxStyled>
           </a>
           <a
             href="https://github.com/nanetteCodes"
@@ -28,14 +27,14 @@ class Footer extends React.Component {
             rel="noopener noreferrer"
             id="logo"
           >
-            <span className="logo-box">
+            <BoxStyled id="logo">
               <img src={githubIcon} alt="github link" />
-            </span>
+            </BoxStyled>
           </a>
           <a href="mailto:nanette.codes@gmail.com" id="logo">
-            <span className="logo-box">
+            <BoxStyled id="logo">
               <img src={emailIcon} alt="email link" />
-            </span>
+            </BoxStyled>
           </a>
         </div>
         <div className="footer-copywrite">

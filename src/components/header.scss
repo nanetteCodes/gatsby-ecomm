@@ -17,10 +17,20 @@ header {
     }
 
     /* logo style */
+
+    #logo {
+      display: -webkit-flex;
+      display: flex;
+      pointer-events: all;
+      position: relative;
+      z-index: 10;
+      text-decoration: none;
+    }
     .logo-box {
       height: 2.5rem;
       width: 2.5rem;
     }
+
     /* Navlink styles */
 
     [data-links] {
