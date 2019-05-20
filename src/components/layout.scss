@@ -6,11 +6,11 @@ html {
 }
 body {
   margin: 0;
-  font-family: "Raleway", sans-serif;
+  font-family: $main-font;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: rgb(255, 233, 219);
-  color: rgb(238, 69, 69);
+  color: $main-red;
   font-weight: 500;
   word-wrap: break-word;
   font-kerning: normal;
@@ -617,7 +617,7 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: $break-mobile) {
   html {
     font-size: 100%;
   }
@@ -634,7 +634,7 @@ pre tt:after {
   grid-column-gap: 6%;
 
   .page-heading {
-    font-family: "Playfair Display", serif;
+    font-family: $page-heading-font;
     text-align: center;
     font-size: 4rem;
     font-weight: 100;

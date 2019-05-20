@@ -1,10 +1,12 @@
+@import "../utils/variables";
+
 #home-page-container {
   text-align: center;
   margin-top: 20%;
   h1 {
     font-size: 6.25rem;
     letter-spacing: 2.5px;
-    font-family: "Playfair Display", serif;
+    font-family: $page-heading-font;
     text-align: center;
   }
   h2 {

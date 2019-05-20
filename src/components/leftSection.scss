@@ -1,7 +1,9 @@
+@import "../css/utils/variables";
+
 #leftSection {
   background-color: rgb(255, 248, 243);
-  box-shadow: 6px 10px 33px -15px #c28181;
-  border: 1px solid #212b36;
+  box-shadow: $box-shadow;
+  border: 1px solid $light-black;
   border-radius: 0.125rem;
   padding: 30px;
   z-index: 1;
@@ -38,7 +40,7 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: $break-tablet) {
   #leftSection {
     /* sticky css */
     height: 80vh;

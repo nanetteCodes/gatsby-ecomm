@@ -1,5 +1,4 @@
-$main-red: #ee4545;
-$light-black: #212b36;
+@import "../css/utils/variables";
 
 .logo-box {
   // height: 2.5rem;
@@ -25,7 +24,7 @@ $light-black: #212b36;
     -webkit-transform 0.3s cubic-bezier(0.5, 0.61, 0.355, 1);
 
   &::after {
-    background-color: $main-red;
+    background-color: $main-red-hex;
     opacity: 0.5;
     border-radius: 0.125rem;
     bottom: -0.0625rem;
@@ -74,7 +73,9 @@ $light-black: #212b36;
   align-items: center;
 }
 
-@media only screen and (min-width: 760px) {
+/* tablet to desktop */
+
+@media only screen and (min-width: $break-tablet) {
   .logo-box {
     height: 3.125rem;
     width: 3.125rem;

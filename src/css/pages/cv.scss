@@ -1,16 +1,18 @@
+@import "../utils/variables";
+
 .resume-content {
   width: 100%;
   display: block;
-  background-color: #f9f9f9;
-  color: #212b36;
-  font-family: "Raleway", sans-serif;
+  background-color: $egg;
+  color: $light-black;
+  font-family: $main-font;
   #content {
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-column-gap: 32px;
     h1,
     h2 {
-      color: #f7877f;
+      color: $coral;
       font-weight: 400;
     }
   }
