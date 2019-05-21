@@ -4,9 +4,9 @@ import Footer from "./footer";
 
 import "./leftSection.scss";
 
-const LeftSection = () => {
+const LeftSection = props => {
   return (
-    <aside id="leftSection">
+    <aside className={`${"leftSection"} ${props.className}`}>
       <div className="content">
         <Link to="/" id="logo-sideBar">
           <span className="logo-box">

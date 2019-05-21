@@ -24,6 +24,7 @@ const getSiteMetadata = graphql`
     }
   }
 `;
+
 const Layout = ({ children }) => (
   <StaticQuery
     query={getSiteMetadata}
@@ -31,8 +32,9 @@ const Layout = ({ children }) => (
       <>
         <Header siteTitle={data.site.siteMetadata.title} />
         <div id="layout">
-          <LeftSection />
+          <LeftSection className={"desktopSidebar"} />
           <main>{children}</main>
+          <LeftSection className={"mobileSidebar"} />
         </div>
       </>
     )}

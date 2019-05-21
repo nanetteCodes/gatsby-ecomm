@@ -627,16 +627,29 @@ pre tt:after {
 
 #layout {
   margin: 0 auto;
-  max-width: 960px;
+  max-width: $break-xl;
   padding: 0 1.0875rem 2.2rem;
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: 1fr;
   grid-column-gap: 6%;
+  grid-row-gap: 65px;
 
   .page-heading {
     font-family: $page-heading-font;
     text-align: center;
     font-size: 4rem;
     font-weight: 100;
+  }
+}
+
+@media only screen and (min-width: $break-mobile) {
+  #layout {
+    grid-row-gap: 78px;
+  }
+}
+
+@media only screen and (min-width: $break-tablet) {
+  #layout {
+    grid-template-columns: 1.2fr 3fr;
   }
 }

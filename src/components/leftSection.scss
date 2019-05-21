@@ -1,6 +1,12 @@
 @import "../css/utils/variables";
 
-#leftSection {
+.leftSection {
+  &.desktopSidebar {
+    display: none;
+  }
+  &.mobileSidebar {
+    display: grid;
+  }
   background-color: rgb(255, 248, 243);
   box-shadow: $box-shadow;
   border: 1px solid $light-black;
@@ -8,8 +14,8 @@
   padding: 30px;
   z-index: 1;
   text-align: center;
-  display: grid;
   grid-template-columns: 1fr;
+  position: unset;
 
   .content {
     align-self: center;
@@ -40,8 +46,16 @@
   }
 }
 
+@media only screen and (max-width: $break-tablet -1) {
+}
 @media only screen and (min-width: $break-tablet) {
-  #leftSection {
+  .leftSection {
+    &.desktopSidebar {
+      display: grid;
+    }
+    &.mobileSidebar {
+      display: none;
+    }
     /* sticky css */
     height: 80vh;
     position: sticky;

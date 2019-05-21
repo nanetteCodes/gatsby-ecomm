@@ -1,0 +1,35 @@
+@import "../utils/variables";
+
+#portfolio-page-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+/* Grid Styles */
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 90%;
+  grid-row-gap: 48px;
+  justify-content: center;
+  grid-auto-rows: 320px;
+}
+
+@media only screen and (min-width: $break-mobile) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 220px);
+    grid-gap: 20px 32px;
+  }
+}
+@media only screen and (min-width: $break-tablet) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px 32px;
+  }
+}
+@media only screen and (min-width: $break-desktop) {
+  .portfolio-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+  }
+}
