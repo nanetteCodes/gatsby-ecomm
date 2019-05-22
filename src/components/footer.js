@@ -1,6 +1,7 @@
 import React from "react";
-import "./footer.scss";
 import BoxStyled from "./boxStyled";
+import "./footer.scss";
+
 //icons images
 import linkedinIcon from "../images/linkedin.svg";
 import githubIcon from "../images/github.svg";
