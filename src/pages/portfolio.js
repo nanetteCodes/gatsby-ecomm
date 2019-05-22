@@ -13,7 +13,6 @@ const Portfolio = () => (
       <h1 className="page-heading">Portfolio</h1>
 
       <div className="portfolio-grid">
-        test
         <CardRetro>Testing Cards</CardRetro>
         <CardRetro>Testing Cards</CardRetro>
         <CardRetro>Testing Cards</CardRetro>

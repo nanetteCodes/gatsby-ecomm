@@ -1,5 +1,6 @@
 import React from "react";
-//import BoxStyled from "./boxStyled";
+import BoxStyled from "./boxStyled";
+
 import "./footer.scss";
 
 //icons images
@@ -18,9 +19,9 @@ class Footer extends React.Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {/* <BoxStyled id="logo"> */}
-            <img src={linkedinIcon} alt="linkedin link" />
-            {/* </BoxStyled> */}
+            <BoxStyled id="logo">
+              <img src={linkedinIcon} alt="linkedin link" />
+            </BoxStyled>
           </a>
           <a
             href="https://github.com/nanetteCodes"
@@ -28,14 +29,14 @@ class Footer extends React.Component {
             rel="noopener noreferrer"
             id="logo"
           >
-            {/* <BoxStyled id="logo"> */}
-            <img src={githubIcon} alt="github link" />
-            {/* </BoxStyled> */}
+            <BoxStyled id="logo">
+              <img src={githubIcon} alt="github link" />
+            </BoxStyled>
           </a>
           <a href="mailto:nanette.codes@gmail.com" id="logo">
-            {/* <BoxStyled id="logo"> */}
-            <img src={emailIcon} alt="email link" />
-            {/* </BoxStyled> */}
+            <BoxStyled id="logo">
+              <img src={emailIcon} alt="email link" />
+            </BoxStyled>
           </a>
         </div>
         <div className="footer-copywrite">
