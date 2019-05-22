@@ -1,9 +1,9 @@
 import React from "react";
 
-import "./card.scss";
+import "./cardRetro.scss";
 
-const Card = props => {
+const CardRetro = props => {
   return <div className="card">{props.children}</div>;
 };
 
-export default Card;
+export default CardRetro;

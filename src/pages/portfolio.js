@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import Card from "../components/card";
+import CardRetro from "../components/cardRetro";
 
 import "../css/pages/portfolio.scss";
 
@@ -14,11 +14,11 @@ const Portfolio = () => (
 
       <div className="portfolio-grid">
         test
-        <Card>Testing Cards</Card>
-        <Card>Testing Cards</Card>
-        <Card>Testing Cards</Card>
-        <Card>Testing Cards</Card>
-        <Card>Testing Cards</Card>
+        <CardRetro>Testing Cards</CardRetro>
+        <CardRetro>Testing Cards</CardRetro>
+        <CardRetro>Testing Cards</CardRetro>
+        <CardRetro>Testing Cards</CardRetro>
+        <CardRetro>Testing Cards</CardRetro>
       </div>
     </div>
   </Layout>
