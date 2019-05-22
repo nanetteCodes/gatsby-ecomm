@@ -1,5 +1,5 @@
 import React from "react";
-import "./test.scss";
+import "./linkBox.scss";
 
 const LinkBoxStyled = props => {
   return <span className="logo-box">{props.children}</span>;
