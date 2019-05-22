@@ -19,7 +19,7 @@ class Footer extends React.Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <BoxStyled id="logo">
+            <BoxStyled>
               <img src={linkedinIcon} alt="linkedin link" />
             </BoxStyled>
           </a>
@@ -27,14 +27,13 @@ class Footer extends React.Component {
             href="https://github.com/nanetteCodes"
             target="_blank"
             rel="noopener noreferrer"
-            id="logo"
           >
-            <BoxStyled id="logo">
+            <BoxStyled>
               <img src={githubIcon} alt="github link" />
             </BoxStyled>
           </a>
-          <a href="mailto:nanette.codes@gmail.com" id="logo">
-            <BoxStyled id="logo">
+          <a href="mailto:nanette.codes@gmail.com">
+            <BoxStyled>
               <img src={emailIcon} alt="email link" />
             </BoxStyled>
           </a>
