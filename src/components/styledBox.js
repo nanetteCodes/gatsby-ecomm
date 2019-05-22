@@ -1,9 +1,9 @@
 import React from "react";
 
-import "./boxStyled.scss";
+import "./styledBox.scss";
 
-const BoxStyled = props => {
+const StyledBox = props => {
   return <span className="logo-box">{props.children}</span>;
 };
 
-export default BoxStyled;
+export default StyledBox;
