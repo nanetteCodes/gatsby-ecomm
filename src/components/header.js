@@ -2,8 +2,9 @@ import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import React from "react";
 import netlifyIdentity from "netlify-identity-widget";
-//import StyledBox from "./styledBox";
 // import gatsbyLogo from "../images/gatsby-icon.png";
+import LinkBoxStyled from "./linkBoxStyled";
+
 import "./header.scss";
 
 const isActive = ({ isCurrent }) => {
@@ -24,9 +25,9 @@ class Header extends React.Component {
           {/* title/ logo */}
           {/* <img src={gatsbyLogo} alt="gatsby garb logo" /> */}
           <NavLink to="/" id="logo">
-            {/* <StyledBox> */}
-            <span className="logo-initial">N</span>
-            {/* </StyledBox> */}
+            <LinkBoxStyled>
+              <span className="logo-initial">N</span>
+            </LinkBoxStyled>
             <span className="logo-text" data-links>
               {siteTitle}
             </span>

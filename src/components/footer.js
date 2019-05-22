@@ -1,5 +1,5 @@
 import React from "react";
-import StyledBox from "./styledBox";
+import LinkBoxStyled from "./linkBoxStyled";
 
 import "./footer.scss";
 
@@ -19,23 +19,23 @@ class Footer extends React.Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <StyledBox>
+            <LinkBoxStyled>
               <img src={linkedinIcon} alt="linkedin link" />
-            </StyledBox>
+            </LinkBoxStyled>
           </a>
           <a
             href="https://github.com/nanetteCodes"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <StyledBox>
+            <LinkBoxStyled>
               <img src={githubIcon} alt="github link" />
-            </StyledBox>
+            </LinkBoxStyled>
           </a>
           <a href="mailto:nanette.codes@gmail.com">
-            <StyledBox>
+            <LinkBoxStyled>
               <img src={emailIcon} alt="email link" />
-            </StyledBox>
+            </LinkBoxStyled>
           </a>
         </div>
         <div className="footer-copywrite">
