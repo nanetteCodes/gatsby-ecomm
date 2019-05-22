@@ -1,8 +1,6 @@
 @import "../css/utils/variables";
 
 .logo-box {
-  // height: 2.5rem;
-  // width: 2.5rem;
   opacity: 1;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -75,16 +73,16 @@
 
 /* tablet to desktop */
 
-@media only screen and (min-width: $break-tablet) {
-  .logo-box {
-    height: 3.125rem;
-    width: 3.125rem;
-  }
-  .logo-box::after {
-    -webkit-transform: translate(0.25rem, 0.25rem);
-    transform: translate(0.25rem, 0.25rem);
-  }
-  .logo-text {
-    margin-left: 1.25rem;
-  }
-}
+// @media only screen and (min-width: $break-tablet) {
+//   .logo-box {
+//     height: 3.125rem;
+//     width: 3.125rem;
+//   }
+//   .logo-box::after {
+//     -webkit-transform: translate(0.25rem, 0.25rem);
+//     transform: translate(0.25rem, 0.25rem);
+//   }
+//   .logo-text {
+//     margin-left: 1.25rem;
+//   }
+// }
