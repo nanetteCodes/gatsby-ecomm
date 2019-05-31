@@ -33,12 +33,28 @@ const Image = () => (
             }
           }
         }
+        burger: file(relativePath: { eq: "burger.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 590) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        bamazon: file(relativePath: { eq: "bamazon.png" }) {
+          childImageSharp {
+            fluid(maxWidth: 590) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     `}
     render={data => (
       <>
-        <Img fluid={data.placeholderImage.childImageSharp.fluid} />
-        <Img fluid={data.iconImage.childImageSharp.fluid} />
+        {/* <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+        <Img fluid={data.iconImage.childImageSharp.fluid} /> */}
+        <Img fluid={data.burger.childImageSharp.fluid} />
+        {/* <Img fluid={data.bamazon.childImageSharp.fluid} /> */}
       </>
     )}
   />
