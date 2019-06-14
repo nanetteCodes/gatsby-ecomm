@@ -1,6 +1,5 @@
 import React from "react";
 import Typed from "react-typed";
-// import Image from "../components/image";
 import SEO from "../components/seo";
 import Layout from "../components/layout";
 
