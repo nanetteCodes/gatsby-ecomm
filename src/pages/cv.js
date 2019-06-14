@@ -7,7 +7,10 @@ import "../css/pages/cv.scss";
 
 const Cv = () => (
   <Layout>
-    <SEO title="resume cv work experience" />
+    <SEO
+      title="Resume"
+      keywords={[`cv`, `work experience`, `nanette julius`]}
+    />
     <h1 className="page-heading">Resume</h1>
     <iframe
       style={{

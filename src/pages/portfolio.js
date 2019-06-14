@@ -8,7 +8,10 @@ import "../css/pages/portfolio.scss";
 
 const Portfolio = () => (
   <Layout>
-    <SEO title="portfolio my work" />
+    <SEO
+      title="Portfolio"
+      keywords={[`my work`, ` projects`, `portfolio`, `nanette`]}
+    />
 
     <div id="portfolio-page-container">
       <h1 className="page-heading">Portfolio</h1>

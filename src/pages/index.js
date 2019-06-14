@@ -27,7 +27,8 @@ const IndexPage = () => {
           `developer`,
           `engineer`,
           `web`,
-          `portfolio`
+          `portfolio`,
+          `website`
         ]}
       />
       <div id="home-page-container">
