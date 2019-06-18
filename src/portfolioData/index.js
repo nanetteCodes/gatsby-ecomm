@@ -2,70 +2,97 @@ export default [
   {
     id: 1,
     title: "swapr",
-    imgSrc: "swapr.png",
-    tech: "Express, SQL, Sass",
-    link: "swapr.png"
+    linkTitle: "swapr",
+    link: "https://github.com/nanetteCodes/swapr",
+    imgSrc: "../images/swapr.png",
+    tech: "Express, SQL, Sass"
   },
   {
     id: 2,
     title: "eventStay",
-    imgSrc: "eventStay.png",
-    tech: "Javascript, AJAX, Materialize",
-    link: "swapr.png"
+    linkTitle: "eventStay",
+    link: "https://github.com/nanetteCodes/EventStay",
+    imgSrc: "../images/eventStay.png",
+    tech: "Javascript, AJAX, Materialize"
   },
   {
     id: 3,
-    title: "New Your Times Articles",
-    tech: "React, MongoDB, Node",
-    link: "swapr.png"
+    title: "New York Times Articles",
+    linkTitle: "NYT Articles",
+    link: "https://github.com/nanetteCodes/NYT-React",
+    imgSrc: "../images/nytREACT.png",
+    tech: "React, MongoDB, Node"
   },
   {
     id: 4,
-    title: "Game of Thrones",
-    tech: "jQuery, Bootstrap, Moments.js",
-    link: "swapr.png"
+    title: "Game of Thrones Trivia",
+    linkTitle: "GOT Trivia",
+    link: "https://github.com/nanetteCodes/GOT-TriviaGame",
+    imgSrc: "../images/GOT.png",
+    tech: "jQuery, Bootstrap, Moments.js"
   },
-  { id: 5, title: "Cart.ly", tech: "React, Axios, Sass", link: "swapr.png" },
+  {
+    id: 5,
+    title: "Cart.ly",
+    linkTitle: "Cart.ly",
+    link: "https://github.com/nanetteCodes/Cart.ly-with-React",
+    imgSrc: "../images/cartly.png",
+    tech: "React, Axios, Sass"
+  },
   {
     id: 6,
     title: "Silicon Valley Friend Finder",
-    tech: "Express, HandleBars, Node.js",
-    link: "swapr.png"
+    linkTitle: "Friend Finder",
+    link: "https://github.com/nanetteCodes/Silicon-Valley-FriendFinder",
+    imgSrc: "../images/friendFinder.png",
+    tech: "Express, HandleBars, Node.js"
   },
   {
     id: 7,
     title: "Burger Eater",
-    tech: "Handlebars, Express, mySQL",
-    link: "swapr.png"
+    linkTitle: "Burger Eater",
+    link: "https://github.com/nanetteCodes/burgerEater",
+    imgSrc: "../images/burger.png",
+    tech: "Handlebars, Express, mySQL"
   },
   {
     id: 8,
     title: "Bamazon",
-    tech: "mySQL, Node, Javascript",
-    link: "swapr.png"
+    linkTitle: "Bamazon",
+    link: "https://github.com/nanetteCodes/BAMazon",
+    imgSrc: "../images/bamazon.png",
+    tech: "mySQL, Node, Javascript"
   },
   {
     id: 9,
     title: "Liri Node App",
-    tech: "Node, javascript",
-    link: "swapr.png"
+    linkTitle: "Liri",
+    link: "https://github.com/nanetteCodes/liri-node-app",
+    imgSrc: "../images/liri.png",
+    tech: "Node, javascript"
   },
   {
     id: 10,
     title: "Crystal Collector",
-    tech: "javascript, bootstrap",
-    link: "swapr.png"
+    linkTitle: "Crystals",
+    link: "https://github.com/nanetteCodes/Crystal-Collector",
+    imgSrc: "../images/crystal.png",
+    tech: "javascript, bootstrap"
   },
   {
     id: 11,
     title: "Mobile App",
-    tech: "javascript, jquery animations, custom CSS",
-    link: "swapr.png"
+    linkTitle: "Mobile App",
+    link: "https://github.com/nanetteCodes/mobileApp",
+    imgSrc: "../images/mobileApp.png",
+    tech: "javascript, jquery animations, custom CSS"
   },
   {
     id: 12,
     title: "Doggy Gif Finder",
-    tech: "javascript, jQuery, Ajax",
-    link: "swapr.png"
+    linkTitle: "Gif Finder",
+    link: "https://github.com/nanetteCodes/Gif-Tastic",
+    imgSrc: "../images/gifTastic.png",
+    tech: "javascript, jQuery, Ajax"
   }
 ];

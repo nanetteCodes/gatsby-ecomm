@@ -54,7 +54,7 @@ const Image = () => (
         {/* <Img fluid={data.placeholderImage.childImageSharp.fluid} />
         <Img fluid={data.iconImage.childImageSharp.fluid} /> */}
         <Img fluid={data.burger.childImageSharp.fluid} />
-        {/* <Img fluid={data.bamazon.childImageSharp.fluid} /> */}
+        <Img fluid={data.bamazon.childImageSharp.fluid} />
       </>
     )}
   />

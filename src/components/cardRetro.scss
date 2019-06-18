@@ -1,14 +1,53 @@
 @import "../css/utils/variables";
 
-.card {
-  //   transform: matrix3d(-1, 0, 0, 0, 0, 1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1);
-  //   backface-visibility: hidden;
+.cardRetro {
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(237, 31, 86, 0.15) 10px 10px 0px;
   border-radius: 5px;
   text-align: center;
   padding: 40px 20px;
+  max-width: 100%;
   p {
     font-weight: 100;
   }
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flipCardRetro {
+  background-color: transparent;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  max-width: 100%;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flipCardRetro:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgba(237, 31, 86, 0.15) 10px 10px 0px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
 }
