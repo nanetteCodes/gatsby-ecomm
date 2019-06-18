@@ -15,6 +15,7 @@ const LeftSection = props => {
         </Link>
         <h1>Nanette Julius</h1>
         <h2>www.nanette.codes</h2>
+        <h3>nanette.codes@gmail.com</h3>
         <a
           rel="noopener noreferrer"
           href={withPrefix("Nanette_Julius.pdf")}
