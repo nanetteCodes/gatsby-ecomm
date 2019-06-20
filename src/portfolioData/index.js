@@ -4,7 +4,7 @@ export default [
     title: "swapr",
     linkTitle: "swapr",
     link: "https://github.com/nanetteCodes/swapr",
-    imgSrc: "../images/swapr.png",
+    imgSrc: require("../images/swapr.png"),
     tech: "Express, SQL, Sass"
   },
   {
@@ -12,7 +12,7 @@ export default [
     title: "eventStay",
     linkTitle: "eventStay",
     link: "https://github.com/nanetteCodes/EventStay",
-    imgSrc: "../images/eventStay.png",
+    imgSrc: require("../images/eventStay.png"),
     tech: "Javascript, AJAX, Materialize"
   },
   {
@@ -20,7 +20,7 @@ export default [
     title: "New York Times Articles",
     linkTitle: "NYT Articles",
     link: "https://github.com/nanetteCodes/NYT-React",
-    imgSrc: "../images/nytREACT.png",
+    imgSrc: require("../images/nytREACT.png"),
     tech: "React, MongoDB, Node"
   },
   {
@@ -28,7 +28,7 @@ export default [
     title: "Game of Thrones Trivia",
     linkTitle: "GOT Trivia",
     link: "https://github.com/nanetteCodes/GOT-TriviaGame",
-    imgSrc: "../images/GOT.png",
+    imgSrc: require("../images/GOT.png"),
     tech: "jQuery, Bootstrap, Moments.js"
   },
   {
@@ -36,7 +36,7 @@ export default [
     title: "Cart.ly",
     linkTitle: "Cart.ly",
     link: "https://github.com/nanetteCodes/Cart.ly-with-React",
-    imgSrc: "../images/cartly.png",
+    imgSrc: require("../images/cartly.png"),
     tech: "React, Axios, Sass"
   },
   {
@@ -44,7 +44,7 @@ export default [
     title: "Silicon Valley Friend Finder",
     linkTitle: "Friend Finder",
     link: "https://github.com/nanetteCodes/Silicon-Valley-FriendFinder",
-    imgSrc: "../images/friendFinder.png",
+    imgSrc: require("../images/friendFinder.png"),
     tech: "Express, HandleBars, Node.js"
   },
   {
@@ -52,7 +52,7 @@ export default [
     title: "Burger Eater",
     linkTitle: "Burger Eater",
     link: "https://github.com/nanetteCodes/burgerEater",
-    imgSrc: "../images/burger.png",
+    imgSrc: require("../images/burger.png"),
     tech: "Handlebars, Express, mySQL"
   },
   {
@@ -60,7 +60,7 @@ export default [
     title: "Bamazon",
     linkTitle: "Bamazon",
     link: "https://github.com/nanetteCodes/BAMazon",
-    imgSrc: "../images/bamazon.png",
+    imgSrc: require("../images/bamazon.png"),
     tech: "mySQL, Node, Javascript"
   },
   {
@@ -68,7 +68,7 @@ export default [
     title: "Liri Node App",
     linkTitle: "Liri",
     link: "https://github.com/nanetteCodes/liri-node-app",
-    imgSrc: "../images/liri.png",
+    imgSrc: require("../images/liri.png"),
     tech: "Node, javascript"
   },
   {
@@ -76,7 +76,7 @@ export default [
     title: "Crystal Collector",
     linkTitle: "Crystals",
     link: "https://github.com/nanetteCodes/Crystal-Collector",
-    imgSrc: "../images/crystal.png",
+    imgSrc: require("../images/crystal.png"),
     tech: "javascript, bootstrap"
   },
   {
@@ -84,7 +84,7 @@ export default [
     title: "Mobile App",
     linkTitle: "Mobile App",
     link: "https://github.com/nanetteCodes/mobileApp",
-    imgSrc: "../images/mobileApp.png",
+    imgSrc: require("../images/mobileApp.png"),
     tech: "javascript, jquery animations, custom CSS"
   },
   {
@@ -92,7 +92,7 @@ export default [
     title: "Doggy Gif Finder",
     linkTitle: "Gif Finder",
     link: "https://github.com/nanetteCodes/Gif-Tastic",
-    imgSrc: "../images/gifTastic.png",
+    imgSrc: require("../images/gifTastic.png"),
     tech: "javascript, jQuery, Ajax"
   }
 ];

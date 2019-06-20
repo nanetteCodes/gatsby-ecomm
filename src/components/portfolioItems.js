@@ -13,8 +13,9 @@ const PortfolioItems = () => (
           </div>
           <div className="flip-card-back">
             <a href={i.link} target="_blank" rel="noopener noreferrer">
-              visit {i.linkTitle}
+              Visit {i.linkTitle}
             </a>
+            <img src={i.imgSrc} alt={i.linkTitle} />
           </div>
         </div>
       </CardRetro>

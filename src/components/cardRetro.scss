@@ -45,9 +45,23 @@
   box-shadow: rgba(237, 31, 86, 0.15) 10px 10px 0px;
   border-radius: 5px;
   text-align: center;
+}
+
+.flip-card-front {
   padding: 40px 20px;
 }
 
 .flip-card-back {
   transform: rotateY(180deg);
+  padding: 40px 0;
+  a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    &:hover {
+      text-decoration: underline;
+      font-weight: 600;
+    }
+  }
 }
