@@ -15,14 +15,14 @@ footer {
   .social-links {
     display: inline-flex;
     text-align: center;
-    a:last-of-type .logo-box img {
-      margin-right: 0;
-    }
     .logo-box {
       height: 2.3rem;
       width: 2.3rem;
       margin-right: 16px;
       margin-bottom: 6px;
+    }
+    a:last-of-type span {
+      margin-right: 0;
     }
     img {
       width: 1.2rem;
