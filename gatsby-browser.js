@@ -8,3 +8,14 @@
 // exports.onRouteUpdate = ({ location, action }) => {
 //   console.log('route changed!', { location, actions });
 // };
+
+export const onServiceWorkerUpdateReady = () => {
+  const answer = window.confirm(
+    `This application has been updated. ` +
+      `Reload to display the latest version?`
+  );
+
+  if (answer === true) {
+    window.location.reload();
+  }
+};
