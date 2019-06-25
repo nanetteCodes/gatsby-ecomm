@@ -1,10 +1,11 @@
+import React from "react";
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
-import React from "react";
+import Media from "react-media";
 import netlifyIdentity from "netlify-identity-widget";
-// import gatsbyLogo from "../images/gatsby-icon.png";
 import LinkBoxStyled from "./linkBoxStyled";
-
+import BurgerHeader from "./burgerHeader";
+import RegularHeader from "./regularHeader";
 import "./header.scss";
 
 const isActive = ({ isCurrent }) => {
@@ -22,8 +23,6 @@ class Header extends React.Component {
     return (
       <header>
         <div className="headerContent">
-          {/* title/ logo */}
-          {/* <img src={gatsbyLogo} alt="gatsby garb logo" /> */}
           <NavLink to="/" id="logo">
             <LinkBoxStyled>
               <span className="logo-initial">N</span>
@@ -32,20 +31,9 @@ class Header extends React.Component {
               {siteTitle}
             </span>
           </NavLink>
-
-          <NavLink to="/about" data-links>
-            About
-          </NavLink>
-          {/* <NavLink to="/blog" data-links>
-            Blog
-          </NavLink> */}
-          <NavLink to="/portfolio" data-links>
-            Portfolio
-          </NavLink>
-          <NavLink to="/cv" data-links>
-            CV
-          </NavLink>
-          {/* <NavLink to="/products">Store</NavLink> */}
+          <Media query="(max-width: 765px)">
+            {matches => (matches ? <BurgerHeader /> : <RegularHeader />)}
+          </Media>
 
           {/* <div data-netlify-identity-menu /> */}
         </div>

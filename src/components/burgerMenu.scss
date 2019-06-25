@@ -1,0 +1,13 @@
+.menu {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 20px;
+  a {
+    font-size: 2rem;
+    font-weight: 100;
+    text-decoration: none;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
