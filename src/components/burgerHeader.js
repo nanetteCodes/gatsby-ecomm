@@ -1,6 +1,6 @@
 import React from "react";
 import Popup from "reactjs-popup";
-import BurgerIcon from "./BurgerIcon";
+import BurgerIcon from "./burgerIcon";
 import Menu from "./burgerMenu";
 import "./burgerIcon.scss";
 
