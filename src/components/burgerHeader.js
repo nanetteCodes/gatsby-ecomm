@@ -19,7 +19,7 @@ const BurgerHeader = () => (
   <div style={styles}>
     <Popup
       modal
-      overlayStyle={{ background: "rgba(255,255,255,0.98" }}
+      overlayStyle={{ background: "#fff8f3" }}
       contentStyle={contentStyle}
       closeOnDocumentClick={false}
       trigger={open => <BurgerIcon open={open} />}
