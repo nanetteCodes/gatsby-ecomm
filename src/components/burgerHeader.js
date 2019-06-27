@@ -1,8 +1,7 @@
 import React from "react";
 import Popup from "reactjs-popup";
-import BurgerIcon from "./burgerIcon";
+import BurgerIcons from "./burgerIcons";
 import Menu from "./burgerMenu";
-import "./burgerIcon.scss";
 
 const styles = {
   fontFamily: "sans-serif",
@@ -22,7 +21,7 @@ const BurgerHeader = () => (
       overlayStyle={{ background: "#fff8f3" }}
       contentStyle={contentStyle}
       closeOnDocumentClick={false}
-      trigger={open => <BurgerIcon open={open} />}
+      trigger={open => <BurgerIcons open={open} />}
     >
       {close => <Menu close={close} />}
     </Popup>
