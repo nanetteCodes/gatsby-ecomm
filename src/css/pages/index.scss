@@ -1,4 +1,5 @@
 @import "../utils/variables";
+@import "../utils/breakpoints";
 
 #home-page-container {
   text-align: center;
@@ -17,5 +18,19 @@
   .self-typed-heading {
     font-size: 1.5rem;
     letter-spacing: 1px;
+  }
+}
+
+@include small-screen-down {
+  #home-page-container {
+    h1 {
+      font-size: 4.25rem;
+    }
+    h2 {
+      font-size: 1.8rem;
+    }
+    .self-typed-heading {
+      font-size: 1.2rem;
+    }
   }
 }

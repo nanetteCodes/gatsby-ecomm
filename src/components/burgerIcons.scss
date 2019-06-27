@@ -4,9 +4,6 @@
 .burger-menu.open {
   display: inline-block;
   cursor: pointer;
-  position: fixed;
-  right: 20px;
-  top: 18px;
   z-index: 9999;
   padding: 10px;
 }

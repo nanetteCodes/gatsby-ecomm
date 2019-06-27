@@ -6,8 +6,10 @@ import Menu from "./burgerMenu";
 const styles = {
   fontFamily: "sans-serif",
   textAlign: "center",
-  marginTop: "40px"
+  display: "flex",
+  position: "relative"
 };
+
 const contentStyle = {
   background: "rgba(255,255,255,0)",
   width: "80%",

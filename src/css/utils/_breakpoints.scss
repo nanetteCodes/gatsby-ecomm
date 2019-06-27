@@ -1,0 +1,83 @@
+/* Breakpoints
+
+example Usage:
+@include x-small-screen-up {
+  font-size: 18px;
+} 
+----------------------------------------------*/
+
+// variables with screen size breakpoints 
+$x-small: 320px;
+$small: 480px;
+$medium: 768px;
+$large: 976px;
+$x-large: 1500px;
+
+// min width mixins
+@mixin x-small-screen-up {
+  @media only screen and (min-width: #{$x-small}) {
+    @content;
+  }
+}
+
+@mixin small-screen-up {
+  @media only screen and (min-width: #{$small}) {
+    @content;
+  }
+}
+
+@mixin medium-screen-up {
+  @media only screen and (min-width: #{$medium}) {
+    @content;
+  }
+}
+
+@mixin large-screen-up {
+  @media only screen and (min-width: #{$large}) {
+    @content;
+  }
+}
+
+// max width mixins
+@mixin small-screen-down {
+  @media only screen and (max-width: #{$small - 1px}) {
+    @content;
+  }
+}
+
+@mixin medium-screen-down {
+  @media only screen and (max-width: #{$medium - 1px}) {
+    @content;
+  }
+}
+
+@mixin large-screen-down {
+  @media only screen and (max-width: #{$large - 1px}) {
+    @content;
+  }
+}
+
+@mixin x-large-screen-down {
+  @media only screen and (max-width: #{$xlarge}) {
+    @content;
+  }
+}
+
+// max & min width mixins
+@mixin desktop-l-screen {
+  @media only screen and (min-width: #{$medium + 1px}) and (max-width: #{$large}) {
+    @content;
+  }
+}
+
+@mixin desktop-xl-screen {
+  @media only screen and (min-width: #{$large + 1px}) and (max-width: #{$x-large}) {
+    @content;
+  }
+}
+
+@mixin desktop-xl-responsive {
+  @media only screen and (min-width: 1500px) {
+    @content;
+  }
+}
