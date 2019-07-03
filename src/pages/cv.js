@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { withPrefix } from "gatsby";
-import Media from "react-media";
+// import Media from "react-media";
 import Image from "../components/image";
 
 import "../css/pages/cv.scss";
