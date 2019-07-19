@@ -11,12 +11,12 @@ const PortfolioItems = () => (
       <CardRetro className={"flipCardRetro"} key={i.id}>
         <div className="flip-card-inner">
           <PortfolioItemFront Title={i.title} Tech={i.tech} />
-          {/* <PorfolioItemBack
-          Link={i.link}
-          LinkTitle={i.linkTitle}
-          ImgSrc={i.imgSrc}
-          /> */}
-          <ReactFlipModal />
+          <PorfolioItemBack
+            Link={i.link}
+            LinkTitle={i.linkTitle}
+            ImgSrc={i.imgSrc}
+          />
+          {/* <ReactFlipModal /> */}
         </div>
       </CardRetro>
     ))}
