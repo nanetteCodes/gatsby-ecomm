@@ -9,6 +9,14 @@ export default [
   },
   {
     id: 2,
+    title: "React Movie",
+    linkTitle: "React Movie",
+    link: "https://nanettecodes.github.io/movie-finder",
+    imgSrc: require("../images/reactMovie.png"),
+    tech: "React, Node, Sass"
+  },
+  {
+    id: 3,
     title: "eventStay",
     linkTitle: "eventStay",
     link: "https://github.com/nanetteCodes/EventStay",
@@ -16,7 +24,7 @@ export default [
     tech: "Javascript, AJAX, Materialize"
   },
   {
-    id: 3,
+    id: 4,
     title: "New York Times Articles",
     linkTitle: "NYT Articles",
     link: "https://github.com/nanetteCodes/NYT-React",
@@ -24,7 +32,7 @@ export default [
     tech: "React, MongoDB, Node"
   },
   {
-    id: 4,
+    id: 5,
     title: "Game of Thrones Trivia",
     linkTitle: "GOT Trivia",
     link: "https://github.com/nanetteCodes/GOT-TriviaGame",
@@ -32,7 +40,7 @@ export default [
     tech: "jQuery, Bootstrap, Moments.js"
   },
   {
-    id: 5,
+    id: 6,
     title: "Cart.ly",
     linkTitle: "Cart.ly",
     link: "https://github.com/nanetteCodes/Cart.ly-with-React",
@@ -40,7 +48,7 @@ export default [
     tech: "React, Axios, Sass"
   },
   {
-    id: 6,
+    id: 7,
     title: "Silicon Valley Friend Finder",
     linkTitle: "Friend Finder",
     link: "https://github.com/nanetteCodes/Silicon-Valley-FriendFinder",
@@ -48,7 +56,7 @@ export default [
     tech: "Express, HandleBars, Node.js"
   },
   {
-    id: 7,
+    id: 8,
     title: "Burger Eater",
     linkTitle: "Burger Eater",
     link: "https://github.com/nanetteCodes/burgerEater",
@@ -56,7 +64,7 @@ export default [
     tech: "Handlebars, Express, mySQL"
   },
   {
-    id: 8,
+    id: 9,
     title: "Bamazon",
     linkTitle: "Bamazon",
     link: "https://github.com/nanetteCodes/BAMazon",
@@ -64,7 +72,7 @@ export default [
     tech: "mySQL, Node, Javascript"
   },
   {
-    id: 9,
+    id: 10,
     title: "Liri Node App",
     linkTitle: "Liri",
     link: "https://github.com/nanetteCodes/liri-node-app",
@@ -72,7 +80,7 @@ export default [
     tech: "Node, javascript"
   },
   {
-    id: 10,
+    id: 11,
     title: "Crystal Collector",
     linkTitle: "Crystals",
     link: "https://github.com/nanetteCodes/Crystal-Collector",
@@ -80,19 +88,11 @@ export default [
     tech: "javascript, bootstrap"
   },
   {
-    id: 11,
+    id: 12,
     title: "Mobile App",
     linkTitle: "Mobile App",
     link: "https://github.com/nanetteCodes/mobileApp",
     imgSrc: require("../images/mobileApp.png"),
     tech: "javascript, jquery animations, custom CSS"
-  },
-  {
-    id: 12,
-    title: "Doggy Gif Finder",
-    linkTitle: "Gif Finder",
-    link: "https://github.com/nanetteCodes/Gif-Tastic",
-    imgSrc: require("../images/gifTastic.png"),
-    tech: "javascript, jQuery, Ajax"
   }
 ];
