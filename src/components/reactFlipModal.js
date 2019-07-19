@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Flipper, Flipped } from "react-flip-toolkit";
-import "./styles.css";
+import "./reactFlipModal.scss";
 
 const Square = ({ toggleFullScreen }) => (
   <Flipped flipId="square">
@@ -27,7 +27,9 @@ const ReactFlipModal = () => {
       {fullScreen ? (
         <FullScreenSquare toggleFullScreen={toggleFullScreen} />
       ) : (
-        <Square toggleFullScreen={toggleFullScreen} />
+        <div className="flip-card-back">
+          <Square toggleFullScreen={toggleFullScreen} />
+        </div>
       )}
     </Flipper>
   );
