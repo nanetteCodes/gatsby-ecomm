@@ -34,3 +34,9 @@
     }
   }
 }
+
+@include medium-screen-down {
+  #___gatsby {
+    width: 100%;
+  }
+}
