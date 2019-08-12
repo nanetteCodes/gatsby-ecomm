@@ -3,7 +3,7 @@ import CardRetro from "./cardRetro";
 import PortfolioItemFront from "./portfolioItemFront";
 import PorfolioItemBack from "./porfolioItemBack";
 import portfolioData from "../portfolioData";
-import ReactFlipModal from "./reactFlipModal";
+//import ReactFlipModal from "./reactFlipModal";
 
 const PortfolioItems = () => (
   <>

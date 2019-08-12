@@ -1,0 +1,90 @@
+@import "../utils/variables";
+@import "../utils/breakpoints";
+
+.about-page-container {
+  h2 {
+    text-align: center;
+  }
+  .intro {
+    text-align: center;
+    padding: 10px;
+  }
+  .i-like {
+    display: grid;
+    grid-template-areas:
+      "title title"
+      "ul1 ul2";
+    background-color: #fff8f3;
+    box-shadow: $box-shadow;
+    border-radius: 0.125rem;
+    padding: 30px;
+    li {
+      list-style: none;
+      text-align: center;
+    }
+    h2 {
+      grid-area: title;
+      font-weight: 100;
+      text-transform: lowercase;
+    }
+    ul:nth-child(1) {
+      grid-area: ul1;
+    }
+    ul:nth-child(2) {
+      grid-area: ul2;
+    }
+  }
+
+  .tech-im-using {
+    display: grid;
+    grid-template-areas:
+      "title title title"
+      "ul1 ul2 ul3";
+    h2 {
+      grid-area: title;
+      color: $light-black;
+      font-weight: 100;
+      text-transform: lowercase;
+    }
+    ul:nth-child(1) {
+      grid-area: ul1;
+    }
+    ul:nth-child(2) {
+      grid-area: ul2;
+    }
+    ul:nth-child(3) {
+      grid-area: ul3;
+    }
+    ul {
+      place-self: center;
+    }
+  }
+
+  .intro,
+  .tech-im-using {
+    box-shadow: $box-shadow;
+    background-color: $main-red-op;
+    border-radius: 0.125rem;
+    padding: 30px;
+    margin: 30px 0;
+    border: 1px solid $light-black;
+    p,
+    li {
+      color: $light-black;
+    }
+    li {
+      list-style: none;
+    }
+  }
+}
+
+@include small-screen-down {
+  .about-page-container {
+    .i-like {
+      grid-template-areas:
+        "title"
+        "ul1"
+        "ul2";
+    }
+  }
+}

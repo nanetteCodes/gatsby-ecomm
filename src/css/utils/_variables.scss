@@ -16,10 +16,11 @@ $background-color: rgb(253, 246, 242);
 $main-teal: rgb(3, 160, 146);
 $lighter-teal: #00ad9e;
 
-/* breakpoints */
+// variables with screen size breakpoints
 $break-xs: 320px;
 $break-mobile: 480px;
 $break-tablet: 765px;
 $break-desktop: 976px;
 $break-desktop-l: 1070px;
-$break-xl: 1200px;
+$break-1200: 1200px;
+$x-large: 1500px;
