@@ -47,13 +47,13 @@
       text-transform: lowercase;
     }
     ul:nth-child(1) {
-      grid-area: ul1;
+      grid-area: ul13;
     }
     ul:nth-child(2) {
-      grid-area: ul2;
+      grid-area: ul1;
     }
     ul:nth-child(3) {
-      grid-area: ul3;
+      grid-area: ul2;
     }
     ul {
       place-self: center;

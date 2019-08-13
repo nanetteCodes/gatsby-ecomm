@@ -12,13 +12,14 @@
   grid-template-columns: 90%;
   grid-row-gap: 48px;
   justify-content: center;
-  grid-auto-rows: 206px;
+  grid-auto-rows: 238px;
 }
 
 @media only screen and (min-width: $break-mobile) {
   .portfolio-grid {
     grid-template-columns: repeat(2, 220px);
     grid-gap: 20px 32px;
+    grid-auto-rows: 206px;
   }
 }
 @media only screen and (min-width: $break-tablet) {
@@ -29,7 +30,8 @@
 }
 @media only screen and (min-width: $break-desktop-l) {
   .portfolio-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 32px;
+    grid-auto-rows: 300px;
   }
 }
