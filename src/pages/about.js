@@ -5,6 +5,22 @@ import Emoji from "../components/emoji";
 
 import "../css/pages/about.scss";
 
+function getDateFrom() {
+  const dateFirst = new Date("07/01/2015");
+  const dateSecond = new Date();
+
+  // time difference
+  const timeDiff = Math.abs(dateSecond.getTime() - dateFirst.getTime());
+
+  // days difference
+  const diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24));
+
+  const diffYears = diffDays / 360;
+
+  // difference
+  return diffYears.toFixed(2);
+}
+
 const About = () => (
   <Layout>
     <SEO
@@ -17,11 +33,13 @@ const About = () => (
 
       <div className="intro">
         <p>
-          My name is Nanette and I have been a developer for 4 years. I have a
-          passion for the front end and building things that have an apealling
-          UI and UX. I made the switch to computer science from music. If you
-          would like to know more information about me or if you would like to
-          get intouch about working together feel free to contact me!
+          My name is Nanette and I have been a developer for{" "}
+          <span>{getDateFrom()} </span>
+          years. I have a passion for the front end and building things that
+          have an apealling UI and UX. I made the switch to computer science
+          from music. If you would like to know more information about me or if
+          you would like to get intouch about working together feel free to
+          contact me!
         </p>
       </div>
 
