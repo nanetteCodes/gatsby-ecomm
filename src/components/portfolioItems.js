@@ -2,7 +2,7 @@ import React from "react";
 import CardRetro from "./cardRetro";
 import PortfolioItemFront from "./portfolioItemFront";
 import PorfolioItemBack from "./porfolioItemBack";
-import portfolioData from "../portfolioData";
+import portfolioData from "../data/portfolioData";
 //import ReactFlipModal from "./reactFlipModal";
 
 const PortfolioItems = () => (
