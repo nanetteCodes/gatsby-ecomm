@@ -40,7 +40,7 @@ const Image = () => (
             }
           }
         }
-        cv: file(relativePath: { eq: "cv-snapshot-v2.png" }) {
+        cv: file(relativePath: { eq: "cv-snapshot-v3.png" }) {
           childImageSharp {
             fluid(maxWidth: 590) {
               ...GatsbyImageSharpFluid_tracedSVG
