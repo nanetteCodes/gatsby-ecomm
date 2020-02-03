@@ -3,7 +3,7 @@
   "private": true,
   "description": "A portfolio website using gatsby and react",
   "version": "0.1.0",
-  "author": "Nanette Julius <nanette.codes@gmail.com>",
+  "author": "Nanette Boghosian <nanette.codes@gmail.com>",
   "dependencies": {
     "@hot-loader/react-dom": "^16.8.6",
     "babel-plugin-styled-components": "^1.10.0",
