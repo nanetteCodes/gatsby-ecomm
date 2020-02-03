@@ -6,13 +6,14 @@ if (process.env.NODE_ENV !== "production") {
 module.exports = {
   siteMetadata: {
     title: `Nanette.Codes`,
-    description: `A portfolio website by Nanette Julius built using React and Gatsby.`,
-    author: `Nanette Julius`
+    description: `A portfolio website by Nanette Boghosian built using React and Gatsby.`,
+    author: `Nanette Boghosian`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
+    `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
