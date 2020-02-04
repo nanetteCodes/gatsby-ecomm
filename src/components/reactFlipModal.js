@@ -4,16 +4,16 @@ import "./reactFlipModal.scss";
 
 const Square = ({ toggleFullScreen }) => (
   <Flipped flipId="square">
-    <div className="square" onClick={toggleFullScreen}>
-      not full
+    <div className="square" onClick={toggleFullScreen} onKeyDown={toggleFullScreen} role="button" tabIndex={0}> 
+      hi
     </div>
   </Flipped>
 );
 
 const FullScreenSquare = ({ toggleFullScreen }) => (
   <Flipped flipId="square">
-    <div className="full-screen-square" onClick={toggleFullScreen}>
-      fullscreen
+    <div className="full-screen-square" onClick={toggleFullScreen}  onKeyDown={toggleFullScreen} role="button" tabIndex={1}>
+      bye
     </div>
   </Flipped>
 );
@@ -27,9 +27,7 @@ const ReactFlipModal = () => {
       {fullScreen ? (
         <FullScreenSquare toggleFullScreen={toggleFullScreen} />
       ) : (
-        <div className="flip-card-back">
-          <Square toggleFullScreen={toggleFullScreen} />
-        </div>
+        <Square toggleFullScreen={toggleFullScreen} />
       )}
     </Flipper>
   );
