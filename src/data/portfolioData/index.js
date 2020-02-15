@@ -5,10 +5,18 @@ export default [
     linkTitle: "swapr",
     link: "https://github.com/nanetteCodes/swapr",
     imgSrc: require("../../images/swapr.png"),
-    tech: "Express, SQL, Sass"
+    tech: "Express, SQL, Sass, JQuery"
   },
   {
     id: 2,
+    title: "GEOgram",
+    linkTitle: "GEOgram",
+    link: "https://geogram.now.sh",
+    imgSrc: require("../../images/geogram.png"),
+    tech: "React, Redux, GraphQL, Mongo, Express"
+  },
+  {
+    id: 3,
     title: "React Movie",
     linkTitle: "React Movie",
     link: "https://nanettecodes.github.io/movie-finder",
@@ -16,20 +24,12 @@ export default [
     tech: "React, Node, Sass"
   },
   {
-    id: 3,
+    id: 4,
     title: "eventStay",
     linkTitle: "eventStay",
     link: "https://github.com/nanetteCodes/EventStay",
     imgSrc: require("../../images/eventStay.png"),
     tech: "Javascript, AJAX, Materialize"
-  },
-  {
-    id: 4,
-    title: "New York Times Articles",
-    linkTitle: "NYT Articles",
-    link: "https://github.com/nanetteCodes/NYT-React",
-    imgSrc: require("../../images/nytREACT.png"),
-    tech: "React, MongoDB, Node"
   },
   {
     id: 5,

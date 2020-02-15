@@ -2,6 +2,7 @@ import React from "react";
 import Typed from "react-typed";
 import SEO from "../components/seo";
 import Layout from "../components/layout";
+// import ReactFlipModal from "../components/reactFlipModal";
 
 import "../css/pages/index.scss";
 
@@ -47,12 +48,10 @@ const IndexPage = () => {
           smartBackspace
           cursorChar="|"
         />
-      </div>
+        {/* <Link to="/about/">Learn more about me.</Link> */}
 
-      {/* <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-        <Image />
-      </div> */}
-      {/* <Link to="/about/">Learn more about me.</Link> */}
+        {/* <ReactFlipModal /> */}   
+      </div>      
     </Layout>
   );
 };
