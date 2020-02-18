@@ -41,14 +41,6 @@ export default [
   },
   {
     id: 6,
-    title: "Cart.ly",
-    linkTitle: "Cart.ly",
-    link: "https://github.com/nanetteCodes/Cart.ly-with-React",
-    imgSrc: require("../../images/cartly.png"),
-    tech: "React, Axios, Sass"
-  },
-  {
-    id: 7,
     title: "Silicon Valley Friend Finder",
     linkTitle: "Friend Finder",
     link: "https://github.com/nanetteCodes/Silicon-Valley-FriendFinder",
@@ -56,7 +48,7 @@ export default [
     tech: "Express, HandleBars, Node.js"
   },
   {
-    id: 8,
+    id: 7,
     title: "Burger Eater",
     linkTitle: "Burger Eater",
     link: "https://github.com/nanetteCodes/burgerEater",
@@ -64,7 +56,7 @@ export default [
     tech: "Handlebars, Express, mySQL"
   },
   {
-    id: 9,
+    id: 8,
     title: "Bamazon",
     linkTitle: "Bamazon",
     link: "https://github.com/nanetteCodes/BAMazon",
@@ -72,7 +64,7 @@ export default [
     tech: "mySQL, Node, Javascript"
   },
   {
-    id: 10,
+    id: 9,
     title: "Liri Node App",
     linkTitle: "Liri",
     link: "https://github.com/nanetteCodes/liri-node-app",
@@ -80,19 +72,11 @@ export default [
     tech: "Node, javascript"
   },
   {
-    id: 11,
+    id: 10,
     title: "Crystal Collector",
     linkTitle: "Crystals",
     link: "https://github.com/nanetteCodes/Crystal-Collector",
     imgSrc: require("../../images/crystal.png"),
     tech: "javascript, bootstrap"
-  },
-  {
-    id: 12,
-    title: "Mobile App",
-    linkTitle: "Mobile App",
-    link: "https://github.com/nanetteCodes/mobileApp",
-    imgSrc: require("../../images/mobileApp.png"),
-    tech: "javascript, jquery animations, custom CSS"
   }
 ];
