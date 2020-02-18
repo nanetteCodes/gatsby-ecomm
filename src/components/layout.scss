@@ -636,9 +636,10 @@ pre tt:after {
 
   .page-heading {
     font-family: $page-heading-font;
-    text-align: center;
     font-size: 4rem;
     font-weight: 100;
+    text-align: center;
+    text-shadow: $text-shadow;
   }
 }
 
