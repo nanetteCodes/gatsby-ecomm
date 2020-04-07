@@ -1,7 +1,7 @@
 export default [
   {
     id: 1,
-    stuff: "React"
+    stuff: "React JS"
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export default [
   },
   {
     id: 4,
-    stuff: "PHP"
+    stuff: "React Native"
   },
   {
     id: 5,

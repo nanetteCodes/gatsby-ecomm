@@ -7,7 +7,7 @@ import stuffIKnowData from "../data/stuffIKnowData";
 import "../css/pages/about.scss";
 
 function getTimeAgo() {
-  const dateFirst = new Date("07/01/2015");
+  const dateFirst = new Date("01/01/2016");
   const dateSecond = new Date();
   // time difference
   const timeDiff = Math.abs(dateSecond.getTime() - dateFirst.getTime());

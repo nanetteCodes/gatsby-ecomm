@@ -21,7 +21,7 @@ const Cv = () => (
         <div className="overlay">
           <a
             rel="noopener noreferrer"
-            href={withPrefix("Nanette_B_02-03-2020.pdf")}
+            href={withPrefix("Nanette_B_04-07-2020.pdf")}
             target="_blank"
             className="text"
           >
@@ -29,6 +29,7 @@ const Cv = () => (
           </a>
         </div>
       </div>
+
       {/* <iframe
               src={withPrefix("Nanette_B_02-03-2020.pdf")}
               title="NanetteJuliusCV"
