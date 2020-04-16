@@ -13,12 +13,12 @@ const LeftSection = props => {
             <span className="logo-initial">N</span>
           </span>
         </Link>
-        <h1>Nanette Julius</h1>
+        <h1>Nanette Boghosian</h1>
         <h2>www.nanette.codes</h2>
         <h3>nanette.codes@gmail.com</h3>
         <a
           rel="noopener noreferrer"
-          href={withPrefix("Nanette_Julius_01-19-2020.pdf")}
+          href={withPrefix("Nanette_B_04-07-2020.pdf")}
           target="_blank"
           className="logo-box"
         >
@@ -26,7 +26,7 @@ const LeftSection = props => {
         </a>
       </div>
 
-      <Footer siteAuthor={"Nanette Julius"} />
+      <Footer siteAuthor={"Nanette Boghosian"} />
     </aside>
   );
 };

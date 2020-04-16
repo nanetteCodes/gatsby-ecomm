@@ -39,7 +39,7 @@ class Footer extends React.Component {
           </a>
         </div>
         <div className="footer-copywrite">
-          ♥ Built by {siteAuthor} © {new Date().getFullYear()}
+          ♥ {siteAuthor} © {new Date().getFullYear()}
         </div>
       </footer>
     );
