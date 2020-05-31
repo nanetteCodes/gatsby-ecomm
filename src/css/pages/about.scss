@@ -6,10 +6,11 @@
     text-align: center;
   }
   .intro {
-    text-align: center;
+    background-color: #fff8f3;
     padding: 10px;
-    span {
+    .timeago {
       font-weight: bold;
+      color: #e9918a;
     }
   }
   .i-like {
@@ -40,6 +41,8 @@
 
   .tech-im-using {
     display: grid;
+    background-color: #f89c9599;
+
     h2 {
       color: $light-black;
       font-weight: 100;
@@ -57,7 +60,6 @@
   .intro,
   .tech-im-using {
     box-shadow: $box-shadow;
-    background-color: #f89c9599;
     border-radius: 0.125rem;
     padding: 30px;
     margin: 30px 0;

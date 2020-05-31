@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import ILikeList from "../components/iLikeList";
 import stuffIKnowData from "../data/stuffIKnowData";
 
 import "../css/pages/about.scss";
@@ -40,18 +39,18 @@ class About extends React.Component {
           <div className="intro">
             <p>
               My name is Nanette and I have been a developer for{" "}
-              <span>{this.state.timeAgo} </span>
+              <span className='timeago'>{this.state.timeAgo} </span>
               years. I have a passion for the front end and building things that
-              have an apealling UI and UX. I made the switch to computer science
-              from music. If you would like to know more information about me or if
+              have an apealling User Experience. I made the switch to computer science
+              from a career in music. If you would like to know more information about me, what I do or if
               you would like to get intouch about working together feel free to
               contact me!
-        </p>
+             </p>
           </div>
 
-          <div className="i-like">
+          {/* <div className="i-like">
             <ILikeList />
-          </div>
+          </div> */}
 
           <div className="tech-im-using">
             <h2>Technologies I'm Using</h2>
