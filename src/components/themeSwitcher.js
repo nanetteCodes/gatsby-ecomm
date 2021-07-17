@@ -30,7 +30,7 @@ const ThemeSwitcher = () => {
         data-testid='theme-switcher'
         onClick={() => setTheme(!theme)}
       >
-        {theme ? 'Theme Two' : 'Theme One'}
+        {theme ? 'Light Theme' : 'Dark Theme'}
       </button>
     </div>
   );
