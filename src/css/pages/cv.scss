@@ -1,5 +1,7 @@
 @import "../utils/variables";
-
+body.theme-two .cv-page-container .overlay {
+  background-color: $main-teal-op;
+}
 .cv-page-container {
   iframe {
     width: 100%;

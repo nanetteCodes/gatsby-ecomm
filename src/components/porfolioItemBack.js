@@ -1,14 +1,21 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-const PorfolioItemBack = props => {
+const PorfolioItemBack = ({ Link, LinkTitle, ImgSrc, }) => {
   return (
     <div className="flip-card-back">
-      <a href={props.Link} target="_blank" rel="noopener noreferrer">
-        Visit {props.LinkTitle}
+      <a href={Link} target="_blank" rel="noopener noreferrer">
+        Visit {LinkTitle}
       </a>
-      <img src={props.ImgSrc} alt={props.LinkTitle} />
+      <img src={ImgSrc} alt={LinkTitle} />
     </div>
   );
+};
+
+PorfolioItemBack.propTypes = {
+  Link: PropTypes.string.isRequired,
+  LinkTitle: PropTypes.string.isRequired,
+  ImgSrc: PropTypes.string.isRequired,
 };
 
 export default PorfolioItemBack;

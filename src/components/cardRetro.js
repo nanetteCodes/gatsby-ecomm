@@ -6,8 +6,8 @@ import "./cardRetro.scss";
 
 // TODO: add logic to show basic card, or all the html for flip in a condition
 
-const CardRetro = props => {
-  return <div className={props.className}>{props.children}</div>;
+const CardRetro = ({ className, children }) => {
+  return <div className={className}>{children}</div>;
 };
 
 CardRetro.propTypes = {

@@ -6,23 +6,22 @@ const isActive = ({ isCurrent }) => {
 };
 const NavLink = props => <Link getProps={isActive} {...props} />;
 
-const RegularHeader = () => {
-  return (
-    <>
-      <NavLink to="/about" data-links>
-        About
-      </NavLink>
-      {/* <NavLink to="/blog" data-links>
+const RegularHeader = () => (
+  <>
+    <NavLink to="/about" data-links>
+      About
+    </NavLink>
+    {/* <NavLink to="/blog" data-links>
             Blog
           </NavLink> */}
-      <NavLink to="/portfolio" data-links>
-        Portfolio
-      </NavLink>
-      <NavLink to="/cv" data-links>
-        CV
-      </NavLink>
-    </>
-  );
-};
+    <NavLink to="/portfolio" data-links>
+      Portfolio
+    </NavLink>
+    <NavLink to="/cv" data-links>
+      CV
+    </NavLink>
+  </>
+);
+
 
 export default RegularHeader;

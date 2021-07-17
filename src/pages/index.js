@@ -2,6 +2,7 @@ import React from "react";
 import Typed from "react-typed";
 import SEO from "../components/seo";
 import Layout from "../components/layout";
+import ThemeSwitcher from "../components/themeSwitcher";
 // import ReactFlipModal from "../components/reactFlipModal";
 
 import "../css/pages/index.scss";
@@ -10,7 +11,7 @@ const IndexPage = () => {
   let roles = [
     "Built with React",
     "Built with Gatsby",
-    "Built with styled-Components",
+    "Built with styled-components",
     "Built with Css Grid"
   ];
 
@@ -25,7 +26,7 @@ const IndexPage = () => {
           `frontend`,
           `front-end`,
           `developer`,
-          `engineer`,
+          `software engineer`,
           `web`,
           `portfolio`,
           `website`
@@ -48,10 +49,11 @@ const IndexPage = () => {
           smartBackspace
           cursorChar="|"
         />
+        <ThemeSwitcher />
         {/* <Link to="/about/">Learn more about me.</Link> */}
 
-        {/* <ReactFlipModal /> */}   
-      </div>      
+        {/* <ReactFlipModal /> */}
+      </div>
     </Layout>
   );
 };

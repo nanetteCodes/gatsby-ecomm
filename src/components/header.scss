@@ -1,5 +1,15 @@
 @import "../css/utils/variables";
-
+body.theme-two header div.headerContent {
+  .navlink[data-links] {
+    background-image: linear-gradient($main-teal-hex, $main-teal-hex),
+      linear-gradient($main-teal-op, $main-teal-op);
+  }
+  [data-links],
+  .active {
+    text-decoration: none;
+    color: rgb(0, 174, 157);
+  }
+}
 header {
   opacity: 1;
   margin-bottom: 1.45rem;

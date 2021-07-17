@@ -1,4 +1,11 @@
 @import "../css/utils/variables";
+body.theme-two .burger-menu {
+  .bar1,
+  .bar2,
+  .bar3 {
+    background-color: $main-teal;
+  }
+}
 
 .burger-menu,
 .burger-menu.open {

@@ -1,5 +1,9 @@
 @import "../css/utils/variables";
 
+.theme-two .leftSection h3 {
+  color: $main-teal-op;
+}
+
 .leftSection {
   &.desktopSidebar {
     display: none;

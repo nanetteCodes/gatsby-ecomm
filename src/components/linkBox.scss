@@ -1,5 +1,8 @@
 @import "../css/utils/variables";
 
+body.theme-two .logo-box::after {
+  background-color: $main-teal;
+}
 .logo-box {
   opacity: 1;
   -webkit-appearance: none;

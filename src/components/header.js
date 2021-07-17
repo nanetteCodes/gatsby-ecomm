@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import Media from "react-media";
@@ -13,33 +13,33 @@ const isActive = ({ isCurrent }) => {
 };
 const NavLink = props => <Link getProps={isActive} {...props} />;
 
-class Header extends React.Component {
-  componentDidMount() {
-    netlifyIdentity.init();
-  }
-  // TODO: updated netlify identity UI
-  render() {
-    const { siteTitle } = this.props;
-    return (
-      <header>
-        <div className="headerContent">
-          <NavLink to="/" id="logo">
-            <LinkBoxStyled>
-              <span className="logo-initial">N</span>
-            </LinkBoxStyled>
-            <span className="logo-text" data-links>
-              {siteTitle}
-            </span>
-          </NavLink>
-          <Media query="(max-width: 765px)">
-            {matches => (matches ? <BurgerHeader /> : <RegularHeader />)}
-          </Media>
+const Header = ({ siteTitle }) => {
 
-          {/* <div data-netlify-identity-menu /> */}
-        </div>
-      </header>
-    );
-  }
+  useEffect(() => {
+    netlifyIdentity.init();
+  }, [])
+
+  // TODO: updated netlify identity UI
+  return (
+    <header>
+      <div className="headerContent">
+        <NavLink to="/" id="logo">
+          <LinkBoxStyled>
+            <span className="logo-initial">N</span>
+          </LinkBoxStyled>
+          <span className="logo-text" data-links>
+            {siteTitle}
+          </span>
+        </NavLink>
+        <Media query="(max-width: 765px)">
+          {matches => (matches ? <BurgerHeader /> : <RegularHeader />)}
+        </Media>
+
+        {/* <div data-netlify-identity-menu /> */}
+      </div>
+    </header>
+  );
+
 }
 
 Header.propTypes = {
@@ -47,6 +47,6 @@ Header.propTypes = {
 };
 
 Header.defaultProps = {
-  siteTitle: ``
+  siteTitle: ''
 };
 export default Header;

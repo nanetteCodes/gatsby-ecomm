@@ -4,12 +4,18 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+
+body.theme-two {
+  background-color: $bg-color-theme2;
+  color: $main-teal;
+}
+
 body {
   margin: 0;
   font-family: $main-font;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(255, 233, 219);
+  background-color: $bg-color-theme1;
   color: $main-red;
   font-weight: 500;
   word-wrap: break-word;

@@ -1,6 +1,11 @@
 @import "../utils/variables";
 @import "../utils/breakpoints";
 
+body.theme-two #home-page-container {
+  .self-typed-heading {
+    color: #2cbbaf;
+  }
+}
 #home-page-container {
   text-align: center;
   margin-top: 20%;

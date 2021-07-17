@@ -1,6 +1,17 @@
 @import "../utils/variables";
 @import "../utils/breakpoints";
 
+body.theme-two .about-page-container {
+  .intro {
+    background-color: #e9f9f5;
+    .timeago {
+      color: #26b9ad;
+    }
+  }
+  .tech-im-using {
+    background-color: #5a9c9799;
+  }
+}
 .about-page-container {
   h2 {
     text-align: center;
