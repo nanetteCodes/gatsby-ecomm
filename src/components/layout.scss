@@ -630,7 +630,9 @@ pre tt:after {
 }
 
 /* layout specific styles */
-
+body.theme-two #layout {
+  text-shadow: $text-shadow-teal;
+}
 #layout {
   margin: 0 auto;
   max-width: $break-1200;
@@ -645,7 +647,7 @@ pre tt:after {
     font-size: 4rem;
     font-weight: 100;
     text-align: center;
-    text-shadow: $text-shadow;
+    text-shadow: $text-shadow-red;
   }
 }
 

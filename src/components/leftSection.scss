@@ -1,7 +1,10 @@
 @import "../css/utils/variables";
 
-.theme-two .leftSection h3 {
-  color: $main-teal-op;
+.theme-two .leftSection {
+  box-shadow: $box-shadow-teal;
+  h3 {
+    color: $main-teal-op;
+  }
 }
 
 .leftSection {
@@ -12,7 +15,7 @@
     display: grid;
   }
   background-color: rgb(255, 248, 243);
-  box-shadow: $box-shadow;
+  box-shadow: $box-shadow-red;
   border: 1px solid $light-black;
   border-radius: 0.125rem;
   padding: 30px;

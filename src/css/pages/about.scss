@@ -11,6 +11,11 @@ body.theme-two .about-page-container {
   .tech-im-using {
     background-color: #5a9c9799;
   }
+
+  .intro,
+  .tech-im-using {
+    box-shadow: $box-shadow-teal;
+  }
 }
 .about-page-container {
   h2 {
@@ -30,7 +35,7 @@ body.theme-two .about-page-container {
       "title title"
       "ul1 ul2";
     background-color: #fff8f3;
-    box-shadow: $box-shadow;
+    box-shadow: $box-shadow-red;
     border-radius: 0.125rem;
     padding: 30px;
     li {
@@ -70,7 +75,7 @@ body.theme-two .about-page-container {
 
   .intro,
   .tech-im-using {
-    box-shadow: $box-shadow;
+    box-shadow: $box-shadow-red;
     border-radius: 0.125rem;
     padding: 30px;
     margin: 30px 0;

@@ -5,6 +5,9 @@ body.theme-two #home-page-container {
   .self-typed-heading {
     color: #2cbbaf;
   }
+  h1 {
+    text-shadow: $text-shadow-teal;
+  }
 }
 #home-page-container {
   text-align: center;
@@ -14,7 +17,7 @@ body.theme-two #home-page-container {
     letter-spacing: 2.5px;
     font-family: $page-heading-font;
     text-align: center;
-    text-shadow: $text-shadow;
+    text-shadow: $text-shadow-red;
   }
   h2 {
     font-size: 2.2rem;

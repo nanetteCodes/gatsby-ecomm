@@ -5,19 +5,19 @@ export default [
   },
   {
     id: 2,
-    stuff: "Redux"
-  },
-  {
-    id: 3,
-    stuff: "Gatsby"
-  },
-  {
-    id: 4,
     stuff: "React Native"
   },
   {
+    id: 3,
+    stuff: "Redux"
+  },
+  {
+    id: 4,
+    stuff: "Typescript"
+  },
+  {
     id: 5,
-    stuff: "HTML/ CSS"
+    stuff: "Jest"
   },
   {
     id: 6,
@@ -25,15 +25,15 @@ export default [
   },
   {
     id: 7,
-    stuff: "Node"
+    stuff: "Gatsby"
   },
   {
     id: 8,
-    stuff: "Mongo"
+    stuff: "HTML/CSS"
   },
   {
     id: 9,
-    stuff: "SQL"
+    stuff: "Sass"
   },
   {
     id: 10,
@@ -41,7 +41,7 @@ export default [
   },
   {
     id: 11,
-    stuff: "Express"
+    stuff: "Node"
   },
   {
     id: 12,

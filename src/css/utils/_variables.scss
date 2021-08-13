@@ -9,8 +9,8 @@ $egg: #f9f9f9;
 $main-red-op: #f89c95;
 $coral: #f7877f;
 $left-background: rgb(255, 248, 243);
-$box-shadow: 6px 10px 33px -15px #c28181;
-$text-shadow: 1px 1px 3px #cf74749c;
+$box-shadow-red: 6px 10px 33px -15px #c28181;
+$text-shadow-red: 1px 1px 3px #cf74749c;
 
 /* lets try a greener theme */
 $bg-color-theme2: rgba(225, 255, 250, 0.87);
@@ -18,6 +18,8 @@ $main-teal: rgb(0, 114, 105);
 $main-teal-hex: #007269;
 $lighter-teal: #00ad9e;
 $main-teal-op: #85b9a9;
+$box-shadow-teal: 6px 10px 33px -15px #007269;
+$text-shadow-teal: 1px 1px 3px #7493cf9c;
 
 // variables with screen size breakpoints
 $break-xs: 320px;
