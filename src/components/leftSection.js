@@ -18,7 +18,7 @@ const LeftSection = ({ className }) => (
       <h3>nanette.codes@gmail.com</h3>
       <a
         rel="noopener noreferrer"
-        href={withPrefix("Nanette_Resume.pdf")}
+        href={withPrefix("Nanette_Resume_1-20-22.pdf")}
         target="_blank"
         className="logo-box"
       >

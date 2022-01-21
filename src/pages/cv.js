@@ -21,7 +21,7 @@ const Cv = () => (
         <div className="overlay">
           <a
             rel="noopener noreferrer"
-            href={withPrefix("Nanette_Resume.pdf")}
+            href={withPrefix("Nanette_Resume_1-20-22.pdf")}
             target="_blank"
             className="text"
           >
