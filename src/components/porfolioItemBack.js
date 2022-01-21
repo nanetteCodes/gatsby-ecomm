@@ -5,7 +5,7 @@ const PorfolioItemBack = ({ Link, LinkTitle, ImgSrc, }) => {
   return (
     <div className="flip-card-back">
       <a href={Link} target="_blank" rel="noopener noreferrer">
-        Visit {LinkTitle}
+        {LinkTitle}
       </a>
       <img src={ImgSrc} alt={LinkTitle} />
     </div>
